@@ -1,0 +1,386 @@
+.center {
+  text-align: center;
+  position: relative;
+  bottom: 0px;
+  font-size: large;
+  user-select: none;
+}
+
+.dropdown {
+  margin: 5px;
+  position: relative;
+  top: 40px;
+  padding: 5px;
+  width: 10%;
+  outline: none;
+  font-weight: normal;
+}
+
+.container {
+  height: 113vh;
+}
+
+.rs {
+  position: relative;
+  top: 60px;
+  font-size: larger;
+  float: left;
+  left: 48%;
+}
+
+.size-ratio {
+  width: 100%;
+  height: 142px;
+  position: relative;
+  background-color: cadetblue;
+  top: 113px;
+  left: 7%;
+  box-shadow: 0px 0px 5px black;
+  border-radius: 14px;
+}
+
+.size-ratio_bottum {
+  width: 28%;
+  height: 38px;
+  position: relative;
+  background-color: violet;
+  top: 113px;
+  left: 37%;
+  box-shadow: 0px 0px 5px black;
+  border-radius: 21px;
+}
+
+.add_required {
+  position: relative;
+  top: 118px;
+  color: mediumblue;
+}
+
+.name {
+  position: relative;
+  top: 120px;
+}
+
+.text-field {
+  padding: 5px;
+  width: 20%;
+  margin: 8px;
+  outline: none;
+}
+
+input:focus {
+  background-color: rgb(177, 177, 76);
+}
+
+body {
+  background: aliceblue;
+}
+
+.drop-down-two {
+  position: relative;
+  top: 156px;
+  border-radius: 33px;
+  padding: 5px;
+  outline: none;
+}
+
+#submit {
+  position: relative;
+  top: 192px;
+  padding: 5px;
+  width: 10%;
+  color: cornflowerblue;
+  background: thistle;
+  font-size: large;
+  cursor: pointer;
+  border: solid;
+  border-radius: 10px;
+}
+
+.dp-container {
+  position: relative;
+  left: 35%;
+  padding: 3%;
+  width: 27%;
+}
+
+.dp-child {
+  padding: 5px;
+  width: inherit;
+  margin: 10px;
+  outline: none;
+  font-size: inherit;
+  user-select: none;
+}
+
+.dp-label {
+  font-family: -webkit-pictograph;
+  user-select: none;
+}
+.login-pop-up{
+  position: relative;
+  top: -279px;
+  transform: translateY(266px);
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0, 1.2, 1, 1);
+}
+.pop-up {
+  background-color: #009688;
+  width: 28%;
+  padding: 10px;
+  border-radius: 40px;
+  position: relative;
+  left: 37%;
+  text-align: center;
+  display: block;
+  color: cornsilk;
+  top: -304px;
+  box-shadow: 0px 0px 5px #3f51b5;
+  transform: translateY(266px);
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0, 1.2, 1, 1);
+}
+
+.desc {
+  position: relative;
+  width: 26%;
+  left: 40%;
+}
+
+ol {
+  display: list-item;
+  list-style: initial;
+}
+
+.span {
+  position: relative;
+  left: 0%;
+  top: 10px;
+  font-size: larger;
+  color: thistle;
+  margin: 14px;
+}
+
+.parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.list {
+  position: relative;
+  left: 79%;
+  top: -29px;
+  display: block;
+  width: 22%;
+}
+
+button[type=button]:hover {
+  background-color: crimson;
+}
+
+.table {
+  background: orange;
+  width: 46%;
+  position: relative;
+  left: 18%;
+  top: 104px;
+  box-shadow: 0px 0px 7px black;
+}
+
+.tr {
+  text-align: -webkit-center;
+  width: 22%;
+  background: white;
+  padding: 5px;
+  display: inline-block;
+  height: 32px;
+  margin: 3px;
+}
+
+.th {
+  color: aliceblue;
+}
+
+.login {
+  background: orange;
+  padding: 9%;
+  height: 148px;
+  user-select: none;
+  margin-left: 31%;
+  margin-top: 10%;
+  width: 22%;
+  border-radius: 12px;
+  box-shadow: 0px 0px 7px currentColor;
+}
+
+.lable {
+  position: relative;
+  padding: 3px;
+  height: 78px;
+  width: 92%;
+  color: blueviolet;
+  left: -2px;
+  font-size: large;
+  font-family: auto;
+}
+
+.text {
+  padding: 5px;
+  width: 51%;
+  outline: none;
+}
+
+#signup {
+  display: grid;
+  opacity: 0;
+  position: relative;
+  width: fit-content;
+  transition: 0.3s;
+  top: -292px;
+  left: 213px;
+}
+
+#lb {
+  position: relative;
+  left: inherit;
+  top: -33px;
+  font-size: x-large;
+  font-family: emoji;
+  color: brown;
+}
+
+.btn {
+  width: 390px;
+  height: 43px;
+  position: relative;
+  border: none;
+  left: -20px;
+  background: blueviolet;
+  border-radius: 10px;
+  font-size: 22px;
+  color: bisque;
+  font-family: fangsong;
+  top: 26px;
+  cursor: pointer;
+}
+
+#btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  background: linear-gradient(23deg, blue, #d32f2f);
+  height: 100%;
+  transition: 0.4s;
+  border-radius: inherit;
+}
+
+#move {
+  position: absolute;
+  transition: 0.3s;
+}
+
+.invalid {
+  margin-left: 83px;
+    font-size: medium;
+    display: block;
+    color: red;
+}
+
+#logout {
+  position: fixed;
+  float: right;
+  right: 30px;
+  width: 82px;
+  padding: 8px;
+  border: none;
+  top: 11px;
+  font-size: larger;
+  color: darkblue;
+  text-decoration: underline;
+  cursor: pointer;
+  user-select: none;
+}
+
+.button {
+  position: relative;
+  padding: 8px 25px;
+  border: none;
+  outline: none;
+  border-radius: 21px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.title {
+  margin: -13px auto;
+  box-shadow: inherit;
+  width: 209px;
+  top: -88px;
+  position: relative;
+  border-radius: 23px;
+}
+
+@media only screen and (max-width: 412px) {
+  .login {
+    background: orange;
+    padding: 9%;
+    height: 250px;
+    left: -44px;
+    margin-left: 31%;
+    margin-top: 10%;
+    width: 51vw;
+    border-radius: 12px;
+    box-shadow: 0px 0px 7px currentColor;
+    position: relative;
+  }
+
+  #title {
+    position: absolute;
+    padding: 0%;
+    top: 5%;
+    width: 23vw;
+    left: 86px;
+    text-shadow: 0px 0px 12px lightgrey;
+    font-size: x-large;
+    color: aliceblue;
+    background: steelblue;
+    padding-left: 25px;
+    padding-right: 25px;
+    -webkit-user-select: none;
+    user-select: none;
+    margin: -3vw;
+    border-radius: 25px;
+    box-shadow: 0px 0px 2px blue;
+  }
+
+  .lable {
+    position: relative;
+    padding: 7px;
+    height: 78px;
+    top: 12%;
+    width: 148%;
+    color: blueviolet;
+    left: -24px;
+    font-size: large;
+    font-family: auto;
+  }
+
+  .btn {
+    width: 143px;
+    height: 43px;
+    position: absolute;
+    left: 19%;
+    background: cadetblue;
+    border-radius: 10px;
+    font-size: 22px;
+    color: bisque;
+    font-family: fangsong;
+    top: 85%;
+    cursor: pointer;
+  }
+}

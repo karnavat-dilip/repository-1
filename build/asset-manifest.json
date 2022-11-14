@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/karnavat-dilip/repository-1static/css/main.22d1a15c.chunk.css",
+    "main.js": "/karnavat-dilip/repository-1static/js/main.fbdbefac.chunk.js",
+    "main.js.map": "/karnavat-dilip/repository-1static/js/main.fbdbefac.chunk.js.map",
+    "runtime-main.js": "/karnavat-dilip/repository-1static/js/runtime-main.f78b4ddd.js",
+    "runtime-main.js.map": "/karnavat-dilip/repository-1static/js/runtime-main.f78b4ddd.js.map",
+    "static/js/2.dcfeb651.chunk.js": "/karnavat-dilip/repository-1static/js/2.dcfeb651.chunk.js",
+    "static/js/2.dcfeb651.chunk.js.map": "/karnavat-dilip/repository-1static/js/2.dcfeb651.chunk.js.map",
+    "static/js/3.174f7b37.chunk.js": "/karnavat-dilip/repository-1static/js/3.174f7b37.chunk.js",
+    "static/js/3.174f7b37.chunk.js.map": "/karnavat-dilip/repository-1static/js/3.174f7b37.chunk.js.map",
+    "index.html": "/karnavat-dilip/repository-1index.html",
+    "static/css/main.22d1a15c.chunk.css.map": "/karnavat-dilip/repository-1static/css/main.22d1a15c.chunk.css.map",
+    "static/js/2.dcfeb651.chunk.js.LICENSE.txt": "/karnavat-dilip/repository-1static/js/2.dcfeb651.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f78b4ddd.js",
+    "static/js/2.dcfeb651.chunk.js",
+    "static/css/main.22d1a15c.chunk.css",
+    "static/js/main.fbdbefac.chunk.js"
+  ]
+}
