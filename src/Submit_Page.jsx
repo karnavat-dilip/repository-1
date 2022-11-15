@@ -113,15 +113,34 @@ export const Submit_Page = () => {
     }
     const [id, setid] = useState()
     // console.log(id)
+
+    const sendhttprequest =(method,url,data)=>{
+        const promise =new Promise((resolve,reject)=>{
+            const xhr=new XMLHttpRequest();
+            xhr.open(method,url);
+    
+            xhr.responseType='json';
+            if (data) {
+                xhr.setRequestHeader('Content-Type','application/json');
+            }
+            xhr.onload =()=>{
+                resolve(xhr.response)
+            }
+            xhr.onerror=()=>{
+                reject('something went wrong...')
+            }
+            xhr.send(JSON.stringify(data))
+        })
+        return promise;
+
+    }
+
     function fetchdata() {
         if (options === null) {
             alert("does not selected...")
         } else {
-            try {
-                const instance = Axios.create();
-                instance.post("/login/server", {
-                    // Uname:localStorage.getItem('h')
-                    Uid: localStorage.getItem('id') || localStorage.getItem('id1'),
+            sendhttprequest('POST','/login/server',{
+                Uid: localStorage.getItem('id') || localStorage.getItem('id1'),
                     h: localStorage.getItem('h'),
                     selected: localStorage.getItem('selected'),
                     G_name: localStorage.getItem('G_name') || localStorage.getItem('G_name1'),
@@ -129,13 +148,30 @@ export const Submit_Page = () => {
                     portno: localStorage.getItem('ort_no') || localStorage.getItem('ort_no1'),
                     G_items: localStorage.getItem('G_items') || localStorage.getItem('G_items1'),
                     location: localStorage.getItem('location') || localStorage.getItem('location1')
-                }).then((rs) => {
-                    console.log(rs)
-                })
-                // console.log(Uid)
-            } catch (error) {
-                console.log(error)
-            }
+            }).then(res=>{
+                console.log(res)
+            }).catch(err=>{
+                console.log(err)
+            })
+            // try {
+            //     const instance = Axios.create();
+            //     instance.post("/login/server", {
+            //         // Uname:localStorage.getItem('h')
+            //         Uid: localStorage.getItem('id') || localStorage.getItem('id1'),
+            //         h: localStorage.getItem('h'),
+            //         selected: localStorage.getItem('selected'),
+            //         G_name: localStorage.getItem('G_name') || localStorage.getItem('G_name1'),
+            //         G_size: localStorage.getItem('G_size') || localStorage.getItem('G_size1'),
+            //         portno: localStorage.getItem('ort_no') || localStorage.getItem('ort_no1'),
+            //         G_items: localStorage.getItem('G_items') || localStorage.getItem('G_items1'),
+            //         location: localStorage.getItem('location') || localStorage.getItem('location1')
+            //     }).then((rs) => {
+            //         console.log(rs)
+            //     })
+            //     // console.log(Uid)
+            // } catch (error) {
+            //     console.log(error)
+            // }
         }
     };
     function back() {
