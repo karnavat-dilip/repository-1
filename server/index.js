@@ -52,8 +52,8 @@ pool.connect(function (err) {
 //   console.log('Deleted Row(s):', results);
 
 // })
-  // const buildpath=path.join(path.dirname(fileURLToPath(import.meta.url)),"../build/index.html")
-  // app.use(express.static(buildpath));
+  const buildpath=path.join(path.dirname(fileURLToPath(import.meta.url)),"../build/index.html")
+  app.use(express.static(buildpath));
 
 // if (process.env.NODE_ENV === "production") {
 //   const buildpath=path.join(path.dirname(fileURLToPath(import.meta.url)),"Client/build")
