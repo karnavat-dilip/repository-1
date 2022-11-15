@@ -135,19 +135,19 @@ export const Submit_Page = () => {
 
     }
 
-    function fetchdata() {
+   async function fetchdata() {
         if (options === null) {
             alert("does not selected...")
         } else {
-            sendhttprequest('POST','/login/server',{
+           await sendhttprequest('POST','/login/server',{
                 Uid: localStorage.getItem('id') || localStorage.getItem('id1'),
-                    h: localStorage.getItem('h'),
-                    selected: localStorage.getItem('selected'),
-                    G_name: localStorage.getItem('G_name') || localStorage.getItem('G_name1'),
-                    G_size: localStorage.getItem('G_size') || localStorage.getItem('G_size1'),
-                    portno: localStorage.getItem('ort_no') || localStorage.getItem('ort_no1'),
-                    G_items: localStorage.getItem('G_items') || localStorage.getItem('G_items1'),
-                    location: localStorage.getItem('location') || localStorage.getItem('location1')
+                    // h: localStorage.getItem('h'),
+                    // selected: localStorage.getItem('selected'),
+                    // G_name: localStorage.getItem('G_name') || localStorage.getItem('G_name1'),
+                    // G_size: localStorage.getItem('G_size') || localStorage.getItem('G_size1'),
+                    // portno: localStorage.getItem('ort_no') || localStorage.getItem('ort_no1'),
+                    // G_items: localStorage.getItem('G_items') || localStorage.getItem('G_items1'),
+                    // location: localStorage.getItem('location') || localStorage.getItem('location1')
             }).then(res=>{
                 console.log(res)
             }).catch(err=>{
